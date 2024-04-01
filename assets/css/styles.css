@@ -10,3 +10,251 @@
 html {
     font-size: 62.5%;
 }
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* ========= Common ========= */
+.content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 118px;
+    border-radius: 24.5px;
+    background: #171100;
+    padding: 0px 16px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 50px;
+    text-align: center;
+}
+
+/* ========= Header ========= */
+.header {
+    position: sticky;
+    top: -18px;
+    padding: 18px 0 0;
+    background: #fffcf4;
+    z-index: 1;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.header .nav-bar {
+    margin-left: auto;
+}
+
+.header .nav-list {
+    display: flex;
+}
+
+.header .nav-item a {
+    position: relative;
+    color: #5f5b53;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+    padding: 8px 21px;
+}
+
+.header .nav-item a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 21px;
+    display: inline-block;
+    width: 0;
+    height: 2px;
+    border-radius: 1px;
+    background: #171100;
+    transition: all 0.5s ease;
+}
+
+.header .nav-item:hover a {
+    color: #171100;
+}
+
+.header .nav-item:hover a::after {
+    width: calc(100% - 21px * 2);
+}
+
+.header .btn {
+    min-width: 144px;
+    margin-left: 49px;
+}
+
+.header .btn:hover {
+    color: #171100;
+    background: #999;
+}
+
+/* ========= Hero ========= */
+.hero {
+    background: #fffcf4;
+    padding: 54px 0 65px;
+}
+
+.hero .content {
+    display: flex;
+}
+
+.hero .img-block {
+    position: relative;
+    margin-right: 230px;
+}
+
+.hero .img-block .image {
+    width: 470px;
+    height: 685px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.hero .img-block .stat-block {
+    position: absolute;
+    left: 300px;
+    bottom: 48px;
+    width: 270px;
+    padding: 28px 24px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .img-block .stat-block .row {
+    display: flex;
+    align-items: center;
+}
+
+.hero .img-block .stat-block .row:not(:first-child) {
+    margin-top: 14px;
+}
+
+.hero .img-block .stat-block .background {
+    --background: rgb(255, 186, 57);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--background);
+}
+
+.hero .img-block .stat-block .info {
+    margin-left: 16px;
+}
+
+.hero .img-block .stat-block .desc {
+    color: #5f5b53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86; /* 185.714% */
+}
+
+.hero .img-block .stat-block .title {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.hero-info {
+    width: 470px;
+    padding-top: 64px;
+}
+
+.hero-info .title {
+    color: #171100;
+    font-family: Sen;
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.18; /* 117.241% */
+    letter-spacing: -0.116rem;
+}
+
+.hero-info .desc {
+    color: #5f5b53;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67; /* 166.667% */
+    margin-top: 22px;
+}
+
+.hero-info .row {
+    display: flex;
+    margin-top: 38px;
+    margin-bottom: 48px;
+    align-items: center;
+}
+
+.hero-info .btn {
+    color: #fff;
+    font-size: 1.8rem;
+    min-width: 180px;
+    line-height: 64px; /* 166.667% */
+    border-radius: 32px;
+    background: #ffb900;
+}
+
+.hero-info .play-btn {
+    text-align: center;
+    line-height: 40px;
+    min-width: 40px;
+    padding: 0px;
+    background: #fff;
+    border-radius: 50%;
+    margin-left: 28px;
+    box-shadow: 14px 10px 38px -18px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 14px 10px 38px -18px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 14px 10px 38px -18px rgba(0, 0, 0, 0.75);
+}
+
+.hero-info .link {
+    color: #171100;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+    margin-left: 14px;
+}
+
+.hero-info .stat-row {
+    display: flex;
+    margin: 8px 0 0;
+    gap: 28px;
+}
+
+.hero-info .stat .value {
+    color: #171100;
+    font-family: "Sen", sans-serif;
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 1.23; /* 122.727% */
+}
+
+.hero-info .stat .label {
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+    margin-left: 10px;
+}
