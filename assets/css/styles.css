@@ -42,10 +42,13 @@ a {
 
 /* ========= Header ========= */
 .header {
-    position: sticky;
-    top: -18px;
     padding: 18px 0 0;
     background: #fffcf4;
+}
+
+.fixed {
+    position: sticky;
+    top: -18px;
     z-index: 1;
 }
 
@@ -216,6 +219,7 @@ a {
 }
 
 .hero-info .play-btn {
+    display: block;
     text-align: center;
     line-height: 40px;
     min-width: 40px;
@@ -223,9 +227,9 @@ a {
     background: #fff;
     border-radius: 50%;
     margin-left: 28px;
-    box-shadow: 14px 10px 38px -18px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 14px 10px 38px -18px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 14px 10px 38px -18px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 2px 34px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 2px 34px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 2px 34px -7px rgba(0, 0, 0, 0.75);
 }
 
 .hero-info .link {
@@ -257,4 +261,202 @@ a {
     font-weight: 400;
     line-height: 1.67;
     margin-left: 10px;
+}
+
+/* ========= Courses ========= */
+.courses {
+    padding: 200px 0;
+}
+
+.courses .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+.courses .header .info-group {
+    width: 458px;
+    max-width: 458px;
+}
+
+.courses .header .title {
+    color: #171100;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26; /* 126.316% */
+    letter-spacing: -0.076rem;
+}
+
+.courses .header .desc {
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67; /* 166.667% */
+    margin-top: 16px;
+}
+
+.courses .header .btn-group {
+    display: flex;
+    gap: 20px;
+}
+
+.courses .header .round-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.courses .header .previous-btn {
+    background: #fff;
+    border: 1px solid #ffb900;
+}
+
+.courses .header .next-btn {
+    background: #ffb900;
+    border: 1px solid #fff;
+}
+
+.course-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.course-item {
+    width: 31.7%;
+    border-radius: 12px;
+    border: 1px solid #e2dfda;
+}
+
+.course-img {
+    width: 100%;
+    height: 278px;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+}
+
+.course-item .info {
+    padding: 16px 22px 22px;
+}
+
+.course-item .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-name {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.course-item .rating {
+    display: flex;
+    gap: 6px;
+}
+
+.course-item .label {
+    color: #fea31b;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.course-item .desc {
+    color: #5f5b53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86; /* 185.714% */
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+.course-item .price {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.course-item .btn {
+    font-size: 1.4rem;
+    font-weight: 600;
+    animation: ease 0.2s;
+}
+
+.course-item .btn:hover {
+    background: #ffb900;
+}
+
+/* ========= Feedback ========= */
+.feedback {
+    padding: 96px 0;
+    background: #2e2100;
+}
+
+.feedback .body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback .info-block .name {
+    color: #f7f7f7;
+    font-family: Sen;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.417; /* 141.667% */
+    margin-top: 18px;
+}
+
+.feedback .info-block .occupation {
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.857; /* 185.714% */
+    margin-top: 4px;
+}
+
+.feedback .dot-row {
+    display: flex;
+    gap: 6px;
+}
+
+.feedback .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+    margin-top: 28px;
+}
+
+.feedback .center-dot {
+    background: #ffb900;
+}
+
+.feedback .quote-block {
+    width: 63.2%;
+    padding-top: 28px;
+    position: relative;
+}
+
+.feedback .quotation-mark {
+    position: absolute;
+    top: 0;
+    left: -30px;
+}
+
+.feedback .quote {
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.539; /* 153.846% */
 }
